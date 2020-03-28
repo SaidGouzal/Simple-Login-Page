@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #34495e;
+  font-family: sans-serif;
+
+}
+
+
+.Box {
+  position: absolute;
+  top: 20%;
+  left: 31%;
+  text-align: center;
+  padding: 40px;
+  border: 2px solid #58d68d;
+  background-color: #2f3542;
+  align-content: center;
+  box-shadow: 10px 5px 5px #58d68d;
+
+  animation-name: box_animation;
+  animation-duration: 2s;
+  animation-timing-function: 1;
+  animation-fill-mode: forwards;
+
+  opacity: 0;
+}
+.Box h1 {
+  position: relative;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@keyframes box_animation {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+    border-radius: 0%;
+  }
+  100% {
+    width: 500px;
+    height: 300px;
+    opacity: 1;
+    border-radius: 50%;
+  }
+}
+
+.Box input[type="text"],
+.Box input[type="password"] {
+  background: none;
+  text-align: center;
+  margin: 5px 20px;
+  border-radius: 24px;
+  padding: 10px 40px;
+  color: white;
+  font-size: 1.1rem;
+  border-color: #48dbfb;
+  outline: none;
+}
+
+.Box input[type="text"]:focus,
+.Box input[type="password"]:focus {
+  width: 270px;
+  border-color: #58d68d;
+}
+.Box input[type="submit"] {
+  background: none;
+  text-align: center;
+  margin: 20px;
+  border-radius: 30px;
+  border-color: #58d68d;
+  padding: 10px 40px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition-property: background-color, box-shadow;
+  transition-delay: 50ms;
+  transition-duration: 500ms;
+}
+
+.Box input[type="submit"]:hover {
+  background-color: #58d68d;
+  box-shadow: 10px 5px 5px #58d68d;
+}
